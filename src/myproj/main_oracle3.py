@@ -47,7 +47,7 @@ def search_by_name():
     db.select_dept_by_dname(dept_name)
 
 
-if __name__ == '__main__':
+def main():
     run = True
     while run:
         menu = show_main_menu()
@@ -73,3 +73,7 @@ if __name__ == '__main__':
                 search_by_name()
             case _:
                 print('메뉴 번호는 0 ~ 8 범위 정수만 가능합니다.')
+
+
+if __name__ == '__main__':
+    main()
